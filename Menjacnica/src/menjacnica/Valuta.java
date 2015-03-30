@@ -10,10 +10,12 @@ public class Valuta {
 	public String getSkraceniNaziv() {
 		return skraceniNaziv;
 	}
-	public void setNazivValute(String nazivValute) {
+	public void setNazivValute(String nazivValute)throws Exception {
+		if(nazivValute==null||nazivValute.isEmpty())throw new Exception();
 		this.nazivValute = nazivValute;
 	}
-	public void setSkraceniNaziv(String skraceniNaziv) {
+	public void setSkraceniNaziv(String skraceniNaziv)throws Exception {
+		if(skraceniNaziv==null || skraceniNaziv.length()!=3)throw new Exception();
 		this.skraceniNaziv = skraceniNaziv;
 	}
 	public int hashCode() {
