@@ -42,7 +42,6 @@ public class Menjacnica implements MenjacnicaInterfejs {
 						trazeniKurs.setSrednjiKurs(kursnaLista.get(i).getSrednjiKurs());
 						trazeniKurs.setValuta(kursnaLista.get(i).getValuta());
 					} catch (Exception e) {
-						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
 				}}
